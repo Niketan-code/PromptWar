@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+coverage/
+uploads/*
+!uploads/.gitkeep
+
+server/*.sqlite
+server/*.sqlite3
+server/*.db
