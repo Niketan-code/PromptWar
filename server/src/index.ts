@@ -9,7 +9,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 import { getDb } from './db/connection.js';
 
 const app = express();
-
+app.set("trust proxy", 1);
 // Security and middleware
 app.use(helmet({
   crossOriginResourcePolicy: { policy: 'cross-origin' },
